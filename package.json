@@ -4,6 +4,7 @@
   "description": "My electron app",
   "main": "main.js",
   "scripts": {
+    "dev": "electron",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
