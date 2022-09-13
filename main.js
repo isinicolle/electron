@@ -11,7 +11,16 @@ app.on('before-quit', () => {
 
 // Construye nuestra primera ventana
 app.on('ready', () => {
-    let win = new BrowserWindow()
+    let win = new BrowserWindow({
+        width: 800,
+        height: 600,
+        title: "Mi primera ventana",
+        center: true,
+        maximizable: false,
+        minimizable: false,
+        resizable: false,
+
+    })
 
     win.on('closed', () => {
         win = null
