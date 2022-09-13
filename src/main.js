@@ -12,14 +12,10 @@ app.on('before-quit', () => {
 // Construye nuestra primera ventana
 app.on('ready', () => {
     let win = new BrowserWindow({
-        width: 800,
-        height: 600,
         title: "Mi primera ventana",
         center: true,
-        maximizable: false,
-        minimizable: false,
-        resizable: false,
-        show: false
+        show: false,
+        minizable: false
 
     })
 
@@ -40,6 +36,7 @@ app.on('ready', () => {
     })
 
     //win.loadURL(`https://isinicolle.github.io/`)
+    win.loadURL(`file://${__dirname}/index.html`)
 })
 
 //app.quit()

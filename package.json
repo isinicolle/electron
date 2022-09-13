@@ -2,9 +2,9 @@
   "name": "electron",
   "version": "1.0.0",
   "description": "My electron app",
-  "main": "main.js",
+  "main": "src/main.js",
   "scripts": {
-    "dev": "electron main.js",
+    "dev": "electron src/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
