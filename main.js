@@ -39,7 +39,7 @@ app.on('ready', () => {
         app.quit()
     })
 
-    win.loadURL(`https://isinicolle.github.io/`)
+    //win.loadURL(`https://isinicolle.github.io/`)
 })
 
 //app.quit()
