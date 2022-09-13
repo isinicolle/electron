@@ -22,6 +22,12 @@ app.on('ready', () => {
 
     })
 
+    //evento move
+    win.on('move', () => {
+        const position = win.getPosition() //devueve la posicion de la vetana
+        console.log(`La posición es ${position}`);
+    })
+
     win.on('closed', () => {
         win = null
         app.quit()
