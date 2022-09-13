@@ -19,19 +19,27 @@ app.on('ready', () => {
         maximizable: false,
         minimizable: false,
         resizable: false,
+        show: false
 
     })
 
+    //once ejecuta una vez
+    win.once('ready-to-show', () => {
+        win.show()
+    })
+/*
     //evento move
     win.on('move', () => {
         const position = win.getPosition() //devueve la posicion de la vetana
         console.log(`La posición es ${position}`);
     })
-
+*/
     win.on('closed', () => {
         win = null
         app.quit()
     })
+
+    win.loadURL(`https://isinicolle.github.io/`)
 })
 
 //app.quit()
